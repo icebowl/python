@@ -11,6 +11,7 @@ class MenuApp(tk.Frame):
         main_frame.columnconfigure(0, weight = 0)
         main_frame.rowconfigure(0, weight = 0)
         main_frame.grid(row  = 0, column = 0)
+        main_frame.place(x = 100, y = 100)
 
         label_frame = tk.Frame(main_frame, width = 200, height = 105, background = "blue")
         label_frame.grid(row  = 0, column = 0)
