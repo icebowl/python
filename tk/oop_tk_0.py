@@ -1,7 +1,7 @@
 import tkinter as tk
 
 class MainMenu:
-    def __init__(self, master):
+    def __init__(self, master,*args,**kwargs):
         self.master = master
         self.frame = tk.Frame(self.master,width=385, height=460, relief='raised', borderwidth=1, background="#00ff00")
         #    self.frame = tk.Frame(self.frame, )
@@ -11,7 +11,7 @@ class MainMenu:
         self.quitButton.pack()
         self.frame.place(x=100, y=100, anchor="nw", width=400, height=400)
         self.frame.pack(expand=True, fill='both')
-        
+
     def new_window(self):
         self.newWindow = tk.Toplevel(self.master)
         self.app = ChoasWindow(self.newWindow)
