@@ -6,12 +6,14 @@ class MenuApp(tk.Frame):
         self.root = parent
         self.root.columnconfigure(0, weight = 0)
         self.root.rowconfigure(0, weight = 0)
+        self.root.minsize(500, 400)
 
         main_frame = tk.Frame(self.root, width = 500, height = 400, background = "#cccccc")
+
         main_frame.columnconfigure(0, weight = 0)
         main_frame.rowconfigure(0, weight = 0)
         main_frame.grid(row  = 0, column = 0)
-        main_frame.place(x = 100, y = 100)
+        #main_frame.place(x = 100, y = 100)
 
         label_frame = tk.Frame(main_frame, width = 200, height = 105, background = "blue")
         label_frame.grid(row  = 0, column = 0)

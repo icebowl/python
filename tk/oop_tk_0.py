@@ -3,7 +3,8 @@ import tkinter as tk
 class MainMenu:
     def __init__(self, master,*args,**kwargs):
         self.master = master
-        self.frame = tk.Frame(self.master,width=385, height=460, relief='raised', borderwidth=1, background="#00ff00")
+        self.master.minsize(500, 500)
+        self.frame = tk.Frame(self.master, relief='raised', borderwidth=1, background="#00ff00")
         #    self.frame = tk.Frame(self.frame, )
         self.button1 = tk.Button(self.frame, text = 'Choas', width = 25, command = self.new_window)
         self.button1.pack()
