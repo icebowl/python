@@ -1,35 +1,6 @@
 import tkinter as tk
 import turtle
 from random import randint
-
-# *************************************************************************
-# Resursion (Pop stack) cwc
-
-def drawSpiral(t, line_length):
-    t.color("#ff0000")
-    t.width(1)
-    if line_length > 0:
-        t.forward(line_length)
-        t.right(36)
-        drawSpiral(t,line_length-3) # this is the recusive call to drawSpiral(t,line_length)
-    t.color("#0000ff")
-    t.width(2)
-    #the following line uses variables from the stack of activation records (line_length)
-    t.forward((line_length/2)*-1)
-    t.left(36)
-
-def callSpiral():
-    twin = turtle.Screen()
-    twin.clear()
-    t = turtle.Turtle()
-    #tWin = turtle.Screen()
-    t.penup()
-    t.goto(-100,250)
-    t.pendown()
-    drawSpiral(t,170)
-    twin.exitonclick()
-# end Recursion
-# *************************************************************************
 # chaos fractal cwc
 def newpoint(plist):  # Define a function called newpoint
 	vx =[0,300,-300]  # Set the x values for triangle vertices.
@@ -77,24 +48,3 @@ def chaos():
     w.exitonclick()
     #w.close()
     #end Chaos
-# *************************************************************************
-#main tk (the menu starts below)
-root = tk.Tk()
-root.option_add("*helvetica", "courier")
-root.wm_title("MENU - CWC PYTHON PRESENTATION")
-root.minsize(400, 200)
-a = tk.Button(root, text="random chaos",font=('courier', '20') ,command=chaos)
-b = tk.Button(root, text="recursion   ",font=('courier', '20') ,command=callSpiral)
-t1 = tk.Label(root, text="Chaos (Sierpinski Triangle) : CW Coleman",font=('courier', '10'))
-t2 = tk.Label(root, text="Resursion (Pop S0AR): CW Coleman : CW Coleman",font=('courier', '10'))
-t3 = tk.Label(root, text = "SOAR (Stack of Activation Records)",font=('courier', '10'))
-a.pack()
-b.pack()
-t1.pack()
-t2.pack()
-t3.pack()
-root.mainloop()
-
-"""
-This menu needs a lot of workself.
-"""

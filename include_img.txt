@@ -1,0 +1,2 @@
+img = tkinter.PhotoImg("<path/to/image_file>.gif")
+can.create_image((x_coordinate, y_coordinate), img)
