@@ -25,28 +25,33 @@ def square(t,x,y,length,tcolor):
     t.circle(15)
     t.end_fill()
 def main():
-    vector = [0,90,180,180,270, \
+    vector = [-1,0,90,180,180,270, \
                 270,0,0,0,90, \
                 90,90,180,180,180, \
-                180, 270,270,270,270, \
-                0,0,0,0]
+                180,270,270,270,270, \
+                0,0,0,0,0]
     x = -400; y = 0
     w = turtle.Screen()
     w.setup(1000, 700)
     w.clear()
-    w.bgcolor("#000000")
+    w.bgcolor("#ffffff")
     t = turtle.Turtle()
-    t.penup
+    t.penup()
     t.goto(0,0)
-    t.speed(5)
-    t.color("#ffffff")
-    for i in range (1,25):
+    t.speed(0)
+    t.pendown()
+    for i in range (1,26):
         prime = isprime(i)
+        print(prime)
         tcolor = "#0000ff"
-        if(prime):
+        if((prime == True) and (i  > 1)):
             tcolor = "#00ff00"
-        square(t,x,y,30,tcolor)
+        t.color(tcolor)
+        t.dot()
+        #t.circle(15)
         t.seth(vector[i])
+        tcolor = "#0000ff"
+        t.color(tcolor)
         t.forward(30)
         #print("number",i," prime = " ,prime )
 
