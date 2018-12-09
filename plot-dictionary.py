@@ -34,17 +34,16 @@ This code uses a dictionary with keys ranging from
 -100 to 100 incrementing by 10.
 Each key has a value of 0 as an integer.
 To retrieve the values in the dictionary "table" a for loop is used.
-The x cooridate on a python turtle screen corresponds to h while 
+The x cooridate on a python turtle screen corresponds to h while
 the y value cooresponds to k.
 **************************************
 for h,k in table.items():  #get the items in the dictionary
 		print(h, k) #trace code
-h and k are then ploted using 
+h and k are then ploted using
 		t.goto(h,k)
 		t.pendown()
 		t.circle(5)
-		
-Change the values from 0 to another integer. 
+
+Change the values from 0 to another integer.
 Try to make something grovey.
 """
-	
