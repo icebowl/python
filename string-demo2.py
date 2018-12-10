@@ -3,7 +3,6 @@ from time import sleep
 def string_methods():
     a = "Hello World!"
     b = "Hello, World!"
-    c = "     Hello, World!"
     s = 1
     print(a[0])
     sleep(s)
@@ -11,9 +10,8 @@ def string_methods():
     sleep(s)
     print(b[2:5])
     sleep(s)
-    print(c)
-    print("c.strip()")
-    print(c.strip())
+    print("a.strip()")
+    print(a.strip())
     sleep(s)
     print(len(a))
     sleep(s)
@@ -21,15 +19,17 @@ def string_methods():
     sleep(s)
     print(a.replace("H", "J"))
     sleep(s)
-    print("split(\",\")")
-    d = b.split(",")
-    print(d)
-    print(d[0])
-    print(d[1])
+    print(b.split(",")) # returns ['Hello', ' World!']
+
+def binstring():
+    b1 = bin(7)
+    b2 =  b1.replace("0b", "")
+    print("bin 7 ",b1,b2)
+
 def main():
     string_methods()
+    binstring()
     print("Enter a binary number:",end="")
     bn = input()
     print("binary: " + bn)
-
 main()
