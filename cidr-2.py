@@ -1,3 +1,4 @@
+#cidr-2.py cwc
 def bin_dec(b): # b is a binary string
     d = 0 # d is the return decimal value (base 10) .
     i = 0 #i is the index of b string
@@ -20,6 +21,11 @@ def cidr_subnet(cidr):
             subnet_string = subnet_string  + "0"
         v = v -1
     subnet_list = subnet_string.split(".")
+    subnet_return = [0,0,0,0]
+    subnet_return[0] = int(bin_dec(subnet_list[0]))
+    subnet_return[1] = int(bin_dec(subnet_list[1]))
+    subnet_return[2] = int(bin_dec(subnet_list[2]))
+    subnet_return[3] = int(bin_dec(subnet_list[3]))
     return subnet_return
 
 def main():
@@ -27,11 +33,6 @@ def main():
     print ("Input a CIDR value (32 to 1) : ",end="")
     cidr = input()
     subnet = cidr_subnet(cidr)
-    o1 = int(bin_dec(subnet[0]))
-    o2 = int(bin_dec(subnet[1]))
-    o3 = int(bin_dec(subnet[2]))
-    o4 = int(bin_dec(subnet[3]))
-    print ("SUBNET = "+str(o1)+"."+str(o2)+"."+str(o3)+"."+str(o4))
     print(subnet)
 
 main()
