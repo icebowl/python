@@ -1,5 +1,4 @@
 # ipv4-cidr.py cwc
-
 def cidr_subnet(cidr):
     n = 32 - int(cidr) #n counts the bits from left to right
     v = 32 # v is subtracted until v is 0
@@ -44,12 +43,22 @@ def bin_dec(b): # b is a binary string
         i = i + 1
     return d
 
+def display_id_broadcast(ipv4,subnet):
+    id = [0,0,0,0]
+    bcast = [0,0,0,0]
+    for n in range(0,4):
+        id[n] = int(ipv4[n]) & int(subnet[n])
+        temp = int(~subnet[n]&255)
+        bcast[n] = int(ipv4[n]) ^ int(temp)
+    print("id",id)
+    print("bcast",bcast)
 
 def main():
     ipv4 = [0,0,0,0]
     subnet = [0,0,0,0]
     ipv4,subnet = get_ip_cidr_input()
     #subnet = cidr_subnet(cidr)
+    display_id_broadcast(ipv4,subnet)
     print(ipv4)
     print(subnet)
 
