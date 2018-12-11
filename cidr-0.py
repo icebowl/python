@@ -1,7 +1,7 @@
 import math
 
-def binaryToDecimal(binary):
-    print(binary)
+def cidr_subnet(b):
+    print(b)
     binary1 = binary
     decimal, i, n = 0, 0, 0
     while(binary != 0):
