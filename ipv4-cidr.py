@@ -49,9 +49,10 @@ def display_id_broadcast(ipv4,subnet):
     for n in range(0,4):
         id[n] = int(ipv4[n]) & int(subnet[n])
         temp = int(~subnet[n]&255)
-        bcast[n] = int(ipv4[n]) ^ int(temp)
-    print("id",id)
-    print("bcast",bcast)
+        print ("temp ",temp)
+        bcast[n] = int(id[n]) ^ int(temp)
+    print("id ",id)
+    print("bcast ",bcast)
 
 def main():
     ipv4 = [0,0,0,0]
