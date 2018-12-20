@@ -1,4 +1,4 @@
-#cidr-2.py cwc
+#cidr.py cwc
 def bin_dec(b): # b is a binary string
     d = 0 # d is the return decimal value (base 10) .
     i = 0 #i is the index of b string
@@ -39,6 +39,6 @@ main()
 
 """
 This python code takes a CIDR input , converts it to binary, then separates
-the bits into four binary octets.  The octets from binary to decimal.
-
+the bits into four binary octets.  The binary octets are converted to decimal.
+This code will be used to caluate network ids and broadcast addresses.
 """
