@@ -9,18 +9,20 @@ class QuadraticEquation:
 
     def x1(self):
         if self.discriminant() < 0:
-            return None
+            istr = "imaginary"
+            return istr
         else:
             return (-self.b + math.sqrt(self.discriminant())) / (2 * self.a)
 
     def x2(self):
         if self.discriminant() < 0:
-            return None
+            istr = "imaginary"
+            return istr
         else:
             return (-self.b - math.sqrt(self.discriminant())) / (2 * self.a)
 
 if __name__ == "__main__":
-    p1 = QuadraticEquation(1,0,-9)
+    p1 = QuadraticEquation(1,0,9)
     x1 = p1.x1()
     x2 = p1.x2()
     print ("Discriminant = ",p1.discriminant())
@@ -34,6 +36,4 @@ tells the program that the code inside this
 if statement should only be executed if the
 program is executed as a standalone program.
 It will not be executed if the program is imported as a module.
-
-
 """
