@@ -18,14 +18,19 @@ print(mydoubler(11))
 print(mytripler(11))
 
 # * * * * * * * * * * * * * * * * * * * * *
-#file 3 : lambda2.property
+#file 3 : quadratic.py
 
 def quadtratic_function(a,b,c):
     return lambda x: a*(x**2) + b*x + c
 
 a1 = quadtratic_function(1,2,1)
 print(a1(1))
+print("Input a,b and c from a quadratic equation in the form of ")
+print("x =  ax^2 + bx + c")
 
+a = input(" Input a ",end="")
+b = input(" Input b ",end="")
+c= input(" Input c ",end="")
 a2 = quadtratic_function(1,2,1)(2)
 
-print(a2)
+# end of the quadratic.py files

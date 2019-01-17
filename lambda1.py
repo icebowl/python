@@ -1,2 +1,5 @@
-x = lambda a, b, c : a + b + c
-print(x(5, 6, 2))
+# file 1 : lambda1.py
+x = lambda a, b, c, d : a * b * c * d
+fx = x(10,11,12,13)
+print("x ",x)
+print(fx)
