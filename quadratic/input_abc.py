@@ -1,5 +1,6 @@
 # input_abc.py
 # this python code uses class_quadtric.py
+#
 from class_quadratic  import *
 def main():
     print("Input a,b and c from an equation ax^2 + bx + c :")
