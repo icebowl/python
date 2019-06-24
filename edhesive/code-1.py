@@ -1,0 +1,17 @@
+# code 1.3 plus cwc
+
+print("Hello world")
+print ("Welcome to Computer Science!")
+print("Hello")
+print("There")
+print(" * * * * * * * * * ")
+print(" ^   ^  ")
+print("( o  o )")
+print("    v   ")
+print(" * * * * * * * * * ")
+print(" _   _")
+print("(,)_(,)")
+print(" | ''|")
+print("=|  @|=")
+print("  --- ")
+print(" * * * * * * * * * ")
