@@ -1,0 +1,94 @@
+ Score for this attempt: 7 out of 7
+Submitted Jun 25 at 8:07am
+This attempt took 8 minutes.
+ 
+Question 1
+1 / 1 pts
+Which of the following is NOT true about variables?
+  The value stored by a variable cannot change.
+  Variables are a name for a spot in the computer's memory
+  The value stored by a variable can be changed.
+  Variable names cannot start with number. For example, 1test is an invalid variable name.
+ 
+Question 2
+1 / 1 pts
+
+Assume the user types in 7 and 10. What is output by the following?
+
+num1 = input ("Enter a number: ")
+num2 = input ("Enter a number: ")
+print (num1 + num2)
+
+  710
+  17
+  no output. there is an error
+  71
+ 
+Question 3
+1 / 1 pts
+Which command converts a number to a string?
+  int
+  str
+  num
+  wor
+ 
+Question 4
+1 / 1 pts
+Which of the following is NOT true about Strings?
+  Stored in 1 byte of memory
+  Lets the user type in letters, numbers and words
+  Python defaults to Strings - have to change a String to a number
+  Not used for calculations
+ 
+Question 5
+1 / 1 pts
+
+What is wrong with:
+
+num1 = int (input("Enter a number: "))
+num2 = int (input("Enter a number: "))
+num3 = int (input("Enter a number: "))
+print ("The average is: " + (num1 + num2 + num3)/3)
+
+  It needs a int command
+  the variables should be: 1num, 2num, 3num
+  It needs a str command
+  The last line should be: print ("The average is: (num1 + num2 + num/3 )€œ)
+ 
+Question 6
+1 / 1 pts
+
+In 1.8, we learned about different data types. The type function returns the type of what you pass into it. For example, if a is a string, then print(type(a)) will print <type 'str'>.
+
+What is output by the following code?
+
+print(type ("67"))
+print(type (67))
+print(type (67.0))
+
+  <type 'int'>
+<type 'int'>
+<type 'float'>
+  <type 'int'>
+<type 'int'>
+<type 'int'>
+  <type 'str'>
+<type 'int'>
+<type 'float'>
+  <type 'str'>
+<type 'int'>
+<type 'int'>
+ 
+Question 7
+1 / 1 pts
+Which of the following lines of code correctly inputs a number?
+  n = input ("Enter a value: ")
+  n = str(input ("Enter a value: "))
+  n = num(input ("Enter a value: "))
+  n = int(input ("Enter a value: "))
+Quiz Score: 7 out of 7
+
+
+
+
+
