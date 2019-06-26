@@ -32,7 +32,7 @@ make it easier to [verb] with people.
 [name] has a long list of sights to see, including the
 [noun] museum and the [adjective 2] park.
 
-Enter a name: Grace
+GraEnter a name: Grace
 Enter an adjective: stinky
 Enter an adjective: blue
 Enter an adverb: quietly
@@ -53,20 +53,20 @@ Argentina
 tickle
 
 '''
-name = input( "Enter a name: Grace : ")
-adj1 = input ("Enter an adjective: stinky : ")
-adj2 = input("Enter an adjective: blue : ")
-adv = input("Enter an adverb: quietly : ")
-food1 = input("Enter a food: soup : ")
-food2 = input("Enter another food: bananas : ")
-noun = input("Enter a noun: button : ")
-place = input ("Enter a place: Paris : ")
-verb = input ("Enter a verb: jump : ")
+name = input( "Enter a name: ")
+adj1 = input ("Enter an adjective: ")
+adj2 = input("Enter an adjective: ")
+adv = input("Enter an adverb: ")
+food1 = input("Enter a food: ")
+food2 = input("Enter another food: ")
+noun = input("Enter a noun: ")
+place = input ("Enter a place: ")
+verb = input ("Enter a verb: ")
 
-print (name+" was planning a dream vacation to "+place)
+print (name+" was planning a dream vacation to "+place+".")
 print (name+" was especially looking forward to trying the local")
 print ("cuisine, including "+adj1+" "+food1+" and "+food2+".")
-print (name+ "will have to practice the language "+ adv+" to")
+print ("\n"+name+ "will have to practice the language "+ adv+" to")
 print ("make it easier to "+verb+" with people.")
-print (name+ " has a long list of sights to see, including the")
+print ("\n"+name+ " has a long list of sights to see, including the")
 print (noun + " museum and the "+ adj2+" park.")
