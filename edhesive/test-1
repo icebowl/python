@@ -1,0 +1,254 @@
+ Score for this quiz: 14 out of 20
+Submitted Jun 26 at 11:19pm
+This attempt took 7 minutes.
+ 
+Question 1
+1 / 1 pts
+Which of the following is NOT an input device?
+  printer
+  microphone
+  scanner
+  mouse
+ 
+IncorrectQuestion 2
+0 / 1 pts
+Which of the following are true about main and secondary memory?
+  Secondary memory is lost when the device's power is turned off.
+  Main memory is used for storage.
+  Main memory is more permanent and used for storage, secondary memory is short term memory is used by the CPU in processing commands.
+  Main memory is short term memory used by the CPU in processing commands, secondary memory is more permanent and used for storage.
+ 
+Question 3
+1 / 1 pts
+Which of the following controls computer memory?
+  operating system
+  Python
+  compiler
+  applications
+ 
+IncorrectQuestion 4
+0 / 1 pts
+What is the correct order for the steps the compiler uses in translating code?
+  Run the commands, Check for mistakes, Translate commands to machine language
+  Translate commands to machine language, Check for mistakes, Run the commands
+  Check for mistakes, Translate commands to machine language, Run the commands
+  Run the commands, Translate commands to machine language, Check for mistakes
+ 
+Question 5
+1 / 1 pts
+What is input?
+  Pulling information into the computer
+  Converting code to machine language
+  Storing data in main memory
+  Displaying information on the screen
+ 
+Question 6
+1 / 1 pts
+Which of the following is a legal variable name?
+  1test
+  52
+  #data
+  temperatureAM
+ 
+Question 7
+1 / 1 pts
+The two basic categories of variable data types are:
+  Words and letters
+  Decimals and integers
+  Strings and numbers
+  Variables and input
+ 
+Question 8
+1 / 1 pts
+What command is used to change a string into a number?
+  chr
+  dec
+  int
+  str
+ 
+IncorrectQuestion 9
+0 / 1 pts
+
+What is output by the following?
+
+print ("Twinkle, \ttwinkle, \tlittle star")
+
+  Twinkle, twinkle, little star
+  Twinkle, \ttwinkle, \tlittle star
+  Twinkle,  twinkle,   little star
+  Twinkle,  
+twinkle,  
+little star
+ 
+Question 10
+1 / 1 pts
+
+What is output by the following?
+
+print (type("95"))
+
+  <type 'str'>
+  <type 'int'>
+  <type 'num'>
+  <type 'wor'>
+ 
+IncorrectQuestion 11
+0 / 1 pts
+
+What is output by the following? Assume the user enters 5 and 4
+
+x = input ("Enter a number: ")
+y = input ("Enter a number: ")
+print ("Values: " + x + y)
+
+  9
+  54
+  Values: 54
+  Values: 9
+ 
+Question 12
+1 / 1 pts
+
+Consider the following code:
+
+x = "apple"
+y = x
+z = "banana"
+print (x + " " + y + "\n" + z)
+
+What is output?
+  apple apple  banana
+  apple apple
+banana
+  apple apple banana
+  apple banana
+ 
+IncorrectQuestion 13
+0 / 1 pts
+Which of the following correctly inputs two numbers and print the sum?
+ 
+
+n1 = input("Enter a number: ")
+n2 = input("Enter a number: ")
+print("The answer is: " + str(n1+n2))
+
+ 
+
+n1 = input("Enter a number: ")
+n2 = input("Enter a number: ")
+print("The answer is: " + int(n1+n2))
+
+ 
+
+n1 = int(input("Enter a number: "))
+n2 = int(input("Enter a number: "))
+print("The answer is: " + str(n1+n2))
+
+ 
+
+n1 = int(input("Enter a number: "))
+n2 = int(input("Enter a number: "))
+print("The answer is: " + int(n1+n2))
+
+ 
+Question 14
+1 / 1 pts
+
+Consider the following code:
+
+x = input ("What year is it?")
+print x
+
+The value stored in x is:
+  a number
+  a String
+  stored in secondary memory
+  a comment
+ 
+Question 15
+1 / 1 pts
+
+Consider the following code:
+
+print ("computer" + "science")
+
+What is output?
+  computer science
+  computerscience
+  computer
+science
+  Nothing, there is an error - you cannot add words.
+ 
+Question 16
+1 / 1 pts
+What is one downside of converting analog information to a digital format?
+  When the power is turned off the information is lost.
+  Limits the technology available.
+  It takes up too much space in memory.
+  Some information may be lost when it is converted.
+ 
+Question 17
+1 / 1 pts
+The symbol used to create a comment is:
+  +
+  #
+  =
+  %
+ 
+IncorrectQuestion 18
+0 / 1 pts
+
+Which of the following will correctly output:
+
+I know there's a proverb which that says
+"To err is human,"
+but
+a human error is nothing to what a computer
+can do if it tries.
+
+- Agatha Christie
+
+ 
+
+quote = "\"To err is human,\""
+print ("I know there's a proverb which that says \t"+ quote + "\tbut")
+print ("a human error is nothing to what a computer")
+print ("can do if it tries.\t\t- Agatha Christie")
+
+ 
+
+quote = "To err is human,"
+print ("I know there's a proverb which that says \n"+ quote + "\nbut")
+print ("a human error is nothing to what a computer")
+print ("can do if it tries.\n\n- Agatha Christie")
+
+ 
+
+quote = "\"To err is human,\""
+print ("I know there's a proverb which that says \n + quote + \nbut")
+print ("a human error is nothing to what a computer")
+print ("can do if it tries.\n\n- Agatha Christie")
+
+ 
+
+quote = "\"To err is human,\""
+print ("I know there's a proverb which that says \n"+ quote + "\nbut")
+print ("a human error is nothing to what a computer")
+print ("can do if it tries.\n\n- Agatha Christie")
+
+ 
+Question 19
+1 / 1 pts
+When do we use numbers instead of strings?
+  To hold both words and integers
+  To store data like phone numbers and street addresses
+  When you need to do calculations
+  To input large amounts of data
+ 
+Question 20
+1 / 1 pts
+Which of the following about computers is NOT true?
+  The memory uses binary numbers.
+  The CPU processes commands.
+  Computing devices are electronic.
+  Computing devices translate digital to analog information in order to process the information.
