@@ -20,4 +20,4 @@ print()
 print("\n BINARY")
 for i in range(n):
  clean = bin(ord(s[i]))[2:4]
- print(clean,end='')
+ print(clean.end='')
