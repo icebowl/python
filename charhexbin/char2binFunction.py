@@ -6,11 +6,13 @@ def bincon(word):
  c = ""
  b = ""
  n = len(word)
+ temp =[]
  print("n ",n,"\n\n")
  for i in range(0,n):
   b =bin(ord(word[i:i+1]))
-  print (word[i:i+1]," ",b)
-  #barray[0] = b
+  print (word[i:i+1]," ",end="")
+  temp = str(b)
+  print(temp[2:])
   #end loop
 
 def main():
