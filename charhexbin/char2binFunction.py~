@@ -12,6 +12,7 @@ def bincon(word):
   b =bin(ord(word[i:i+1]))
   print (word[i:i+1]," ",end="")
   temp = str(b)
+  print(temp)
   temp = temp[2:1]
   print(temp,temp[2:])
   #end loop
@@ -21,7 +22,7 @@ def main():
  print (str(sys.argv))
  word = sys.argv[1]
  n = len(word)
- bincon(word," ",end="")
+ bincon(word)
  print("main ",word,n)
 
 main()
