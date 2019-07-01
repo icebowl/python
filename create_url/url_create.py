@@ -29,5 +29,7 @@ name_git = [[1,"JohnB","johnmburnside"],
 print(name_git) 
 print("\n\n * * * * * * * * * * \n")
 urlstring = "<a href = \"https://"+str(name_git[0][2])+".gihub.io\" target = \"_blank\">"+str(name_git[0][1])+"</a>"
-print()
-print (urlstring)
+for n in range (0:21):
+ urlstring = "<a href = \"https://"+str(name_git[n][2)+".gihub.io\" target = \"_blank\">"+str(name_git[n][1])+"</a>"
+ print()
+ print (urlstring)
