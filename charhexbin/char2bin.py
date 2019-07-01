@@ -31,6 +31,7 @@ def bincon(word):
   print (word[i:i+1]," ",end="")
   temp = str(b)
   print(temp)
+
   temp = temp[2:1]
   print(temp,temp[2:])
   #end loop
