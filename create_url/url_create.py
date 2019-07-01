@@ -37,6 +37,6 @@ for n in range ( 0,21):
 print()
  
 for n in range ( 0,21):
- urlstring = "<a href = \"https://github.com/"+str(name_git[n][2])+"?tab=repositories target = \"_blank\">"+str(name_git[n
+ urlstring = "<a href = \"https://github.com/"+str(name_git[n][2])+"?tab=repositories\" target = \"_blank\">"+str(name_git[n
  ][1])+" REPOS </a>"
  print (urlstring)
