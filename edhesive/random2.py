@@ -1,4 +1,4 @@
-import simplegui
+import simpleguitk as simplegui
 import random
  
 frameWidth = 500
