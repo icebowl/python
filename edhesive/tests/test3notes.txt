@@ -1,0 +1,11 @@
+12. Which of the following are true about algorithms? (You may select more than one)
+a. must output a string
+*b. produce a result
+*c. can be done by a computer
+*d. can perform logical operations
+
+13. What are the two reasons we analyze algorithms?
+a. Ease of coding
+*b. Predict performance
+*c. Make decisions about what algorithm to use
+d. Sorting Data
