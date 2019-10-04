@@ -9,7 +9,7 @@ def hexcon(num):
 	
 def main():
 	hs = ""
-	for i in range(0,256):
+	for i in range(9,10):
 		hs = hexcon(i)
 		print(i,hs)
 	
