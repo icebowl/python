@@ -1,4 +1,12 @@
 # basecon.py cwc
+def hexcon(num):
+	key = "0123456789abcdef" # hex key
+	h = ""
+	h16 = int(num/16)
+	h1 = num % 16
+	h = key[h16]+ key[h1]
+	return h
+
 def bincon(num,addSpace):
 	n = num
 	s = addSpace
@@ -21,6 +29,8 @@ def main():
 	bs = ""
 	for i in range(0,256):
 		bs = bincon(i,1)
-		print(i,bs)
-
+		hs = hexcon(i)
+		c = chr(i)
+		print(i,bs,hs,c)
+	
 main()

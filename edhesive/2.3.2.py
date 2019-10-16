@@ -17,3 +17,4 @@ totalinches = inches1 + inches2 + feet1 *12 + feet2 *12
 tf = int(totalinches / 12)
 ti = int(totalinches % 12)
 print("Feet: "+str(tf)+" Inches: "+str(ti))
+
