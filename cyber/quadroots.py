@@ -1,5 +1,5 @@
 '''
-quadroots.py CWC and Amit Saha(Doing Math With Python)
+quadroots.py CWC . Reference Amit Saha(Doing Math With Python)
 Quadratic calulator
 D is the Discriminant of  a quadratic equation .  D = b^2 - 4ac
 Try the following equations
