@@ -9,7 +9,7 @@ y = (5x^2 + 4x +2)
 '''
 def roots(a,b,c):
 	D = (b*b - 4*a*c)
-	p
+	print()
 	print("D = " + str(D))
 	if (D >= 0):  #check for postive D
 		print ("REAL ROOTS")
@@ -17,12 +17,14 @@ def roots(a,b,c):
 		x1 = (-b + D) / (2*a)
 		x2 = (-b - D)/ (2*a)
 		print ("x1 = "+str(x1)+" x2 = "+str(x2))
+                returnString = "x1 = "+str(x1)+" x2 = "+str(x2)
+                print (returnString)
 	elif(D < 0):  #check for negative D
 		D= (D * -1)**0.5;  #Change D to a postive.  Take the square root then represent with i
 		print("IMAGINARY ROOTS")
 		print ("x1 = -"+str(b/(2*a))+" - "+str(D/(2*a))+"i")
 		print ("x1 = -"+str(b/(2*a))+" + "+str(D/(2*a))+"i")
-		
+#the following has two underscores__  before and after name and main 
 if __name__ == '__main__':
 	print("Input a,b and c for the quadratic (ax^2 + bx + c)")
 	a = input("Enter a: ")
