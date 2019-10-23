@@ -18,7 +18,7 @@ while (hscore <= 100 or cscore <= 100):
 		else:
 			player ="COMPUTER"
 		print("THE - "+ player+" - IS THE PLAYER.")
-		print("SCORES HUMAN",hscore," COMPUTER ",cscore)
+		print("SCORES -> HUMAN",hscore," COMPUTER ",cscore)
 		if (toggle_hc == 1):
 			keep = chr(random.randint(0,1)+107)
 			print("COMPUTE KEEP KEY "+keep)
