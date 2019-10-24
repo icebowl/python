@@ -1,35 +1,64 @@
 import random
+import sys
 hscore = 0
 cscore = 0
 randomKeep = 0
-toggle_hc = -1 # human is -1
-scoreTemp = 0
 print("LET'S GET STARTED")
 print("TYPE K OR k to KEEP YOUR SCORE")
 print("TYPE ANY OTHER CHARACTER TO ROLL")
 print("THEN PRESS THE \'Enter\' KEY\n\n")
-while (hscore <= 100 or cscore <= 100):
+while (hscore <= 100 and cscore <= 100):
 	#roll = 0
 	count = 1
 	keep = "*"
 	done = 0
-	#roll the numbers
-	while (done == 0 and keep !="k"):
+	scoreTemp = 0
+	#human 
+	while (done == 0):
 		roll = 0
-		if (toggle_hc == -1):
-			player = "HUMAN"
-		else:
-			player ="COMPUTER"
+		player = "HUMAN"
 		print("THE - "+ player+" - IS THE PLAYER.")
-		print("SCORES -> HUMAN",hscore," COMPUTER ",cscore," CURRENT TURN SCORE " , scoreTemp)
-		if (toggle_hc == -1):
-			keepTheScore = input("Keep your total score? (type \'k\' to keep) ")
-			keep =  keepTheScore[0].lower()
-			if (keep == 'k'):
-				#toggle_hc = toggle_hc * -1
-				hscore = hscore + scoreTemp
-				scoreTemp = 0
-		elif (toggle_hc == 1):
+		print("SCORES -> HUMAN= ",hscore," COMPUTER= ",cscore," CURRENT TURN SCORE= " , scoreTemp)
+		keepTheScore = input("Keep your total score? ( type \'k\' to keep ) ")
+		keep =  keepTheScore[0].lower()
+		if (keep == 'k'):
+			hscore = hscore + scoreTemp
+			scoreTemp = 0
+			done = 1
+		roll = random.randint(1,6)
+		print("\nROLL NUMBER "+str(count)+" THE CURRENT ROLL IS ",roll,"\n\n")
+		count = count + 1
+		if (roll != 1):
+			scoreTemp = scoreTemp + roll
+		else:
+			scoreTemp = 0
+			done = 1
+	#computer
+	done = 0
+	while (done == 0):
+		player = "COMPUTER"
+		print("\t\t\tTHE - "+ player+" - IS THE PLAYER.")
+		print("\t\t\tSCORES -> HUMAN= ",hscore," COMPUTER= ",cscore," CURRENT TURN SCORE= " , scoreTemp)
+		keep = chr(random.randint(0,5)+107)
+		print("\t\t\tCOMPUTE KEEP KEY "+keep)
+		#temp = input("THIS IS A DEBUG ")
+		if (keep == 'k'):
+			cscore = cscore + scoreTemp
+			scoreTemp = 0
+			done = 1
+		roll = random.randint(1,6)
+		print("\n\t\t\tiROLL NUMBER "+str(count)+" THE CURRENT ROLL IS ",roll,"\n\n")
+		count = count + 1
+		if (roll != 1):
+			scoreTemp = scoreTemp + roll
+		else:
+			scoreTemp = 0
+			done = 1
+print("FINAL SCORE ")
+print("SCORES -> HUMAN= "+str(hscore)+" COMPUTER= "+str(cscore))
+'''
+
+elif (toggle_hc == 1):
 			keep = chr(random.randint(0,5)+107)
 			print("COMPUTE KEEP KEY "+keep)
 			temp = input("THIS IS A DEBUG")
@@ -38,25 +67,6 @@ while (hscore <= 100 or cscore <= 100):
 				#toggle_hc = toggle_hc * -1
 				cscore = cscore + scoreTemp
 				scoreTemp = 0
-		#roll
-		roll = random.randint(1,6)
-		print("\nROLL NUMBER "+str(count)+" THE CURRENT ROLL IS ",roll,"\n\n")
-		count = count + 1
-		if (roll != 1):
-			scoreTemp = scoreTemp + roll
-		else:
-			scoreTemp = 0
-			roll = 0
-			done = 1
-			toggle_hc = toggle_hc * -1
-		if(keep == "k" and roll != 1):
-			toggle_hc = toggle_hc * -1
-			roll = 0
-		
-	
-		
-
-'''
 Play Pig
 
 The game Pig was invented in 1945 by John Scarne. 
