@@ -4,6 +4,11 @@ sudo apt install python3-pip
 pip install colorama
 python3 -m pip install colorama
 '''
+from colorama import Fore, Back, Style 
+print(Fore.RED + 'THE PIG GAME') 
+print(Style.RESET_ALL) 
+
+
 import random
 import sys
 hscore = 0
@@ -42,6 +47,7 @@ while (hscore <= 100 and cscore <= 100):
 	#computer
 	done = 0
 	while (done == 0):
+		print(Fore.RED + 'COMPUTER') 
 		player = "COMPUTER"
 		print("\t\t\tTHE - "+ player+" - IS THE PLAYER.")
 		print("\t\t\tSCORES -> HUMAN= ",hscore," COMPUTER= ",cscore," CURRENT TURN SCORE= " , scoreTemp)
@@ -52,6 +58,7 @@ while (hscore <= 100 and cscore <= 100):
 			cscore = cscore + scoreTemp
 			scoreTemp = 0
 			done = 1
+			print(Style.RESET_ALL)	
 		roll = random.randint(1,6)
 		print("\n\t\t\tiROLL NUMBER "+str(count)+" THE CURRENT ROLL IS ",roll,"\n\n")
 		count = count + 1
@@ -60,6 +67,7 @@ while (hscore <= 100 and cscore <= 100):
 		else:
 			scoreTemp = 0
 			done = 1
+			print(Style.RESET_ALL)	
 print("FINAL SCORE ")
 print("SCORES -> HUMAN= "+str(hscore)+" COMPUTER= "+str(cscore))
 '''
