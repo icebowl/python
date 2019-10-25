@@ -44,10 +44,18 @@ i = 0
 row = input("ROW "+str(i+1)+" COLUMN "+str(codevalues[i]+1)+" CHARACTER.")
 if (row == str(code[i])):
 	check = check + 1
+elif (row == "**"):
+	print(" 42 ! ")
+else:
+	print("* NOT 42 *");
 i = 1
 row = input("ROW "+str(i+1)+" COLUMN "+str(codevalues[i]+1)+" CHARACTER.")
 if (row == str(code[i])):
 	check = check + 1
+elif (row == "**"):
+	print(" 42 ! ")
+else:
+	print("* NOT 42 *");
 i = 2
 row = input("ROW "+str(i+1)+" COLUMN "+str(codevalues[i]+1)+" CHARACTER.")
 if (row == str(code[i])):
@@ -57,10 +65,6 @@ row = input("ROW "+str(i+1)+" COLUMN "+str(codevalues[i]+1)+" CHARACTER.")
 if (row == str(code[i])):
 	check = check + 1
 i = 4
-row = input("ROW "+str(i+1)+" COLUMN "+str(codevalues[i]+1)+" CHARACTER.")
-if (row == str(code[i])):
-	check = check + 1
-i = 5
 row = input("ROW "+str(i+1)+" COLUMN "+str(codevalues[i]+1)+" CHARACTER.")
 if (row == str(code[i])):
 	check = check + 1
