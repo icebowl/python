@@ -1,4 +1,9 @@
 '''
+sudo apt install python-pip;
+sudo apt install python3-pip;
+pip install colorama;
+python3 -m pip install colorama;
+
 colorama 
 Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
 Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
@@ -49,7 +54,7 @@ for j in range (0,5):
     key[j] = s
 #get codes
 print(Back.BLUE,end="")
-print(Fore.BLACK+"HERE IS THE CODE MATRIX")
+print(Fore.BLACK+"CODE MATRIX")
 print(Style.RESET_ALL,end="")
 print(Back.WHITE,end="")
 print(Fore.BLUE,end="")
@@ -61,11 +66,12 @@ for j in range (0,5):
     code[j] = temp
 #print(code) debuf
 print(Back.BLUE,end="")
-print(Fore.BLACK+"TYPE THE CHARACTER CODE THE PRESS Enter . . .")
+print(Fore.BLACK+"Type the CHARACTER from the CODE MATRIX ")
+print(Fore.BLACK+"then press Enter . . .")
 print(Style.RESET_ALL)
 check = 0
 for i in range (0,5):
-    row = input("ROW "+str(i+1)+" COLUMN "+str(codevalues[i]+1)+" CHARACTER.")
+    row = input("ROW "+str(i+1)+" COLUMN "+str(codevalues[i]+1)+" CHARACTER : ")
     if (row == str(code[i])):
         check = check + 1
 if(check == 5):
