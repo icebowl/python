@@ -51,4 +51,5 @@ def main():
         #print("number",i," prime = " ,prime )
 
     w.exitonclick()
-main()
+if __name__ == '__main__':
+	main()

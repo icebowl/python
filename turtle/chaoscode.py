@@ -48,3 +48,4 @@ def chaos():
     w.exitonclick()
     #w.close()
     #end Chaos
+chaos()
