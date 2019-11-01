@@ -72,4 +72,5 @@ def ulam():
         t.forward(30)
         #print("number",i," prime = " ,prime )
     w.exitonclick()
-ulam()
+if __name__ == '__main__':
+	ulam()

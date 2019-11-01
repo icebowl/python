@@ -1,5 +1,4 @@
 import tkinter as tk
-from PIL import Image, ImageTk
 from chaos_spiral import *
 from ulam_circle import *
 class MainMenu:
@@ -32,13 +31,7 @@ Ulam Spiral \n \
 Cw. Coleman",font=('courier', '10'),background="#eee8d5" )
         self.text.pack()
         self.frame.pack(expand=True, fill='both')
-        # display image
-        load = Image.open("solarized-palette.png")
-        render = ImageTk.PhotoImage(load)
         # labels can be text or images
-        self.img = tk.Label(self.frame, image=render)
-        self.img.image = render
-        self.img.place(x=50, y=400)
         # * * * * * * * * *
 
     def new_window(self):

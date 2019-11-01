@@ -72,4 +72,4 @@ def ulam():
         t.forward(30)
         #print("number",i," prime = " ,prime )
     w.exitonclick()
-#ulam()
+ulam()
