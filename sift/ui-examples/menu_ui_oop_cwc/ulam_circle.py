@@ -35,13 +35,14 @@ def circler(t,x,y,r,tcolor):
     #t.end_fill()
 
 def ulam():
-
+    turtle.TurtleSceen._RUNNING = True
     vector = [-1,0,90,180,180,270, \
                 270,0,0,0,90, \
                 90,90,180,180,180, \
                 180,270,270,270,270, \
                 0,0,0,0,0]
     x = -400; y = 0
+    try:
     w = turtle.Screen()
     #w.setup(1000, 700)
     w.clear()
@@ -71,5 +72,8 @@ def ulam():
         t.color(tcolor)
         t.forward(30)
         #print("number",i," prime = " ,prime )
-    w.exitonclick()
-ulam()
+    w.exitonclick()	
+    
+
+if __name__ == '__main__':
+	ulam()

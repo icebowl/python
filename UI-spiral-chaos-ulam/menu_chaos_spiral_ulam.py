@@ -1,12 +1,12 @@
 import tkinter as tk
-from PIL import Image, ImageTk
-from chaos_spiral import *
-from ulam_circle import *
+from chaoscode import *
+from spiralcode import *
+from ulamcirclecode import *
 class MainMenu:
     def __init__(self, master,*args,**kwargs):
         self.master = master
-        self.master.minsize(500, 700)
-        self.master.wm_title("MENU")
+        self.master.minsize(700, 700)
+        self.master.wm_title(". . . MENU . . .")
         self.master.option_add("*Font", "helvetica")
         # start frame
         self.frame = tk.Frame(self.master, relief='raised', borderwidth=1, background="#eee8d5")
@@ -32,13 +32,7 @@ Ulam Spiral \n \
 Cw. Coleman",font=('courier', '10'),background="#eee8d5" )
         self.text.pack()
         self.frame.pack(expand=True, fill='both')
-        # display image
-        load = Image.open("solarized-palette.png")
-        render = ImageTk.PhotoImage(load)
         # labels can be text or images
-        self.img = tk.Label(self.frame, image=render)
-        self.img.image = render
-        self.img.place(x=50, y=400)
         # * * * * * * * * *
 
     def new_window(self):
@@ -59,6 +53,8 @@ class ChoasWindow:
 
 def main():
     root = tk.Tk()
+    import sys
+    print(sys.version)
     app = MainMenu(root)
     root.mainloop()
 
