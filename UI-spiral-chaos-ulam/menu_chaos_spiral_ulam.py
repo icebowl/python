@@ -2,6 +2,7 @@ import tkinter as tk
 from chaoscode import *
 from spiralcode import *
 from ulamcirclecode import *
+from elipse import *
 class MainMenu:
     def __init__(self, master,*args,**kwargs):
         self.master = master
@@ -19,6 +20,8 @@ class MainMenu:
         self.button2.pack()
         self.button3 = tk.Button(self.frame, text = 'Ulam', width = 25, command = ulam)
         self.button3.pack()
+        self.button4 = tk.Button(self.frame, text = 'Elipse', width = 25, command = callElipse)
+        self.button4.pack()
         self.quitButton = tk.Button(self.frame, text = 'Quit', width = 25, command = self.close_windows)
         self.quitButton.pack()
         self.text = tk.Label(self.frame, text="* * * * * * * * * * * * * \n \
