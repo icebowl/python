@@ -3,6 +3,8 @@ from chaoscode import *
 from spiralcode import *
 from ulamcirclecode import *
 from elipse import *
+from gradient import *
+
 class MainMenu:
     def __init__(self, master,*args,**kwargs):
         self.master = master
@@ -22,6 +24,8 @@ class MainMenu:
         self.button3.pack()
         self.button4 = tk.Button(self.frame, text = 'Elipse', width = 25, command = callElipse)
         self.button4.pack()
+        self.button5 = tk.Button(self.frame, text = 'Gradient', width = 25, command = gradient)
+        self.button5.pack()
         self.quitButton = tk.Button(self.frame, text = 'Quit', width = 25, command = self.close_windows)
         self.quitButton.pack()
         self.text = tk.Label(self.frame, text="* * * * * * * * * * * * * \n \
@@ -32,6 +36,13 @@ Spiral Resursion: \n \
 * * * * * * * * * * * * * \n \
 Ulam Spiral \n \
 {turtle version with vector list) \n \
+* * * * * * * * * * * * * \n \
+Elipse \n \
+(Create with an elipse funtion  x^2/a^2 + y^2/b^2 = 1) \n \
+* * * * * * * * * * * * * \n \
+Graient \n \
+Study of color.\n \
+* * * * * * * * * * * * * \n \
 Cw. Coleman",font=('courier', '10'),background="#eee8d5" )
         self.text.pack()
         self.frame.pack(expand=True, fill='both')
