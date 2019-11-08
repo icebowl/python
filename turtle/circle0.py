@@ -9,10 +9,24 @@ def hexcon(num):
 	h1 = num % 16
 	h = key[h16]+ key[h1]
 	return h
+	
+def showPi(t,ratio):
+	t.penup()
+	t.goto(-200,-240)
+	t.seth(0)
+	t.color("#FDF6E3")
+	t.begin_fill()
+	t.pendown();t.forward(400);t.right(90);t.forward(90);t.right(90);t.forward(400);t.right(90);t.forward(90)
+	t.end_fill()
+	t.goto(-130,-280)
+	t.color("#ff3300")
+	style = ('Arial', 30, 'bold')
+	t.write(str(ratio), font=style, align='left')
+	t.penup()
+	
 def grid(t):
 	t.penup()
 	t.goto(0,0)
-
 
 	for angle in range(0,360,90):
 		t.color("#327FDC")
@@ -43,34 +57,24 @@ def pi(t):
 		h = float (x/200)
 		y = random.randint(-200,200)
 		k = float(y/200)
-		if (((h * h) + (k * k ))> 1):
-			thecolor = "#DC327F"
+		print(h,k)
+		if (((h * h) + (k * k ))> 1.0):
+			print("************** miss ****************")
+			thecolor = "#ddff00"
 		else:
 			thecolor = "#32DC7F"
 			hits = hits + 1
 		alldots = alldots + 1
 		ratio = float(hits/alldots)*4
 		if(c % 1000 == 0):
-			t.penup()
-			t.goto(-200,-240)
-			t.seth(0)
-			t.color("#FDF6E3")
-			t.begin_fill()
-			t.pendown();t.forward(400);t.right(90);t.forward(90);t.right(90);t.forward(400);t.right(90);t.forward(90)
-			t.end_fill()
-			t.goto(-130,-280)
-			t.color("#ff3300")
-			style = ('Arial', 30, 'bold')
-			t.write(str(ratio), font=style, align='left')
-			print(c,ratio)
-			t.penup()
+			print(c)
+			showPi(t,ratio)
 		t.color(thecolor)
 		t.goto(x,y)
 		t.pendown()
 		t.dot()
 		t.penup()
 		c = c + 1
-
 
 def main():
 	w = turtle.Screen()
