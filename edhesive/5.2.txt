@@ -1,0 +1,32 @@
+# CodeSkulptor runs Python programs in your browser.
+# Click the upper left button to run this simple demo.
+
+# CodeSkulptor runs in Chrome 18+, Firefox 11+, and Safari 6+.
+# Some features may work in other browsers, but do not expect
+# full functionality.  It does NOT run in Internet Explorer.
+
+import simplegui
+import random
+def draw_handler(canvas):
+    # your code goes here
+    h = random.randint(200,400)
+    k = random.randint(200,400)
+    red = random.randint(0,255)
+    green = random.randint(0,255)
+    blue = random.randint(0,255)
+    color = "RGB( " + str(red) + "," + str(green) + "," + str(blue) + ")"
+    print(color)
+    canvas.draw_point([h, k], color)
+    
+frame = simplegui.create_frame("Random", 600, 600)
+frame.set_canvas_background("Black")
+frame.set_draw_handler(draw_handler)
+frame.start()
+
+
+'''
+oh my
+http://www.codeskulptor.org/#user46_ohKvvwipRQ_4.py
+
+'''
+

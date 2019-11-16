@@ -44,6 +44,7 @@ def ulam():
     try:
         turtle.TurtleScreen._RUNNING = True
         w = turtle.Screen()
+        w.title("Ulam")
         w.setup(700, 700)
         w.clear()
         w.bgcolor("#fdf6e3")
