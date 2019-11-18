@@ -27,6 +27,7 @@ def newpoint(plist):  # Define a function called newpoint
 def chaos():
 	try:
 		turtle.TurtleScreen._RUNNING = True
+		
 		w = turtle.Screen()
 		w.title("Chaos")
 		w.clear()
