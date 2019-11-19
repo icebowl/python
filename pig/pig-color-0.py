@@ -1,10 +1,16 @@
 #cwc
 import random
 import time
+from colorama import init, Fore, Back, Style
 #globals
 t = "@\t"
 def display(roll,tempscore,player,hcount,ccount,h,c):
-    trow = "* * * * * * * * * * * * * * * * * * * * * * * * *\n*\tTYPE K TO KEEP ANY OTHER KEY TO ROLL "
+    if(player == -1):
+        print(Fore.GREEN + 'GREEN set on stdout. ', end='')
+        trow = "* * * * * * * * * * * * * * * * * * * * * * * * *\n*\tTYPE K TO KEEP ANY OTHER KEY TO ROLL "
+    else:
+        print(Fore.RED + 'RED set on stdout. ', end='')
+        trow = "* * * * * * * * * * * * * * * * * * * * * * * * *\n*\t\t\t\tCOMPUTER IS DECIDING TO ROLL OR KEEP "
     if(player == -1):
         t="*\t"
         playerName = "HUMAN"
@@ -17,7 +23,8 @@ def display(roll,tempscore,player,hcount,ccount,h,c):
     print(t+"HUMAN TOTAL "+str(h)+" COMPUTER TOTAL "+str(c))
     print(t+"ROLL VALUE "+str(roll)+" CURRENT ROLL SCORE "+str(tempscore))
     print(trow)
-
+    print(Style.RESET_ALL)
+    
 def main():
     h = 0;c = 0; tempscore = 0; player = -1
     print("LET'S GET STARTED")
@@ -44,10 +51,11 @@ def main():
                 tempscore = tempscore + roll
                 hcount = hcount + 1
         else:
-            # computer roll
+            # computer roll and sleep
             keep = chr(random.randint(0,5)+107)
-            time.sleep(2)
+            time.sleep(3)
             if (keep == "k"):
+                print("\t\t\tCOMPUTER KEPT SCORE ! ! ! ! ! ! ! ! ! ! !")
                 c = c + tempscore + roll
                 player = player * -1
                 tempscore=0
