@@ -1,3 +1,5 @@
+#65536.py cwc
+import random
 import datetime
 
 def getDateString():
@@ -11,18 +13,23 @@ def getDateString():
 		me = "0" + str(me)
 	timestring = str(y) + str(dt.month) + str(dt.day)+"-"+str(hr)+str(me)+"."+str(dt.second)
 	return timestring
-	'''print(timestring)
-	print(y)
-	print(x)
-	print(x.year)
-	print(x.month)
-	print(x.day)
-	print(x.hour)
-	print(x.minute)
-	'''
+
+def createRandoms():
+	filename = getDateString()
+	filename = filename + ".txt"
+	f = open(filename, "a")
+
+	for i in range (0,65536):
+		n =  random.randint(65, 65+25)
+		c = chr(n)
+		f.write(c)
+		#print(c,end="")
+	f.close()
+	 
 def main():
-	datetime = getDateString()
-	print(datetime)
-	
+	createRandoms()
+
 if __name__ == '__main__':
 	main()
+
+#python 65536.py > 191213-1302.txt

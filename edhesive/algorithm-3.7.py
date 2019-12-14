@@ -28,7 +28,7 @@ describing the variable names.
 '''
 while(done==False):
  mn = int(input("Input a minimum integer value: "))
- mx = int(input("Input a minimum integer value: "))
+ mx = int(input("Input a maximum integer value: "))
  if(mn<mx):
   done=True
 md = int((mx - mn)/2)
