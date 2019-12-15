@@ -9,17 +9,37 @@ def poly(t,sides,size):
 	for n in range (0,sides):
 		t.forward(size)
 		t.right(180-angl)
-			
+		
+def fourLeaf(t,x,y,s,c):
+	adj = -20
+	t.penup()
+	t.pensize(3)
+	t.goto(x,y)
+	f = s * 2
+	t.color(c)
+	t.setheading(0+adj)
+	t.penup();t.forward(f);t.pendown()
+	t.pendown();poly(t,18,s)
+	t.setheading(90+adj)
+	t.penup();t.forward(f);t.pendown()
+	poly(t,18,s)
+	t.setheading(180+adj)
+	t.penup();t.forward(f);t.pendown()
+	poly(t,18,s)
+	t.setheading(270+adj)
+	t.penup();t.forward(f);t.pendown()
+	poly(t,18,s)		
 def mike(t): 
 	print(wdth,hgth,bgstring) #print global
 	theta = 0
+	fourLeaf(t,0,0,3,green)
 	for n in range (0,15):
 		t.penup()
 		t.goto(0,0)
 		t.setheading(theta)
 		t.pendown()
-		t.pensize(5)
-		t.color("#000000")
+		t.pensize(1)
+		t.color(blue)
 		t.forward(100)
 		t.pencolor(red)
 		poly(t,n+2,70)
