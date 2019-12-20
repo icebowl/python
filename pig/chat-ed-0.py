@@ -38,7 +38,7 @@ for j in range (0,5):
     temp = temp[codevalues[j]]
     code[j] = temp
 #print(code) debuf
-print("TYPE THE CHARACTER CODE THE PRESS Enter . . .")
+print("TYPE THE CHARACTER CODE THEN PRESS Enter . . .")
 check = 0
 i = 0
 row = input("ROW "+str(i+1)+" COLUMN "+str(codevalues[i]+1)+" CHARACTER.")
