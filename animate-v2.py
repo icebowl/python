@@ -12,22 +12,17 @@ def poly(t,sides,size):
 	
 def leo(t): 
 	theta = 0
-	fourLeaf(t,0,0,3,green)
-	for n in range (0,15):
+	for n in range (0,5):
 		t.penup()
 		t.goto(0,0)
 		t.setheading(theta)
 		t.pendown()
-		t.pensize(1)
+		t.pensize(n+1)
 		t.color(blue)
 		t.forward(100)
 		t.pencolor(red)
-		poly(t,n+2,70)
-		t.pencolor(blue)
-		poly(t,5,90)
-		t.pencolor(green)
-		poly(t,36,5)
-		theta = theta + 24
+		poly(t,n+3,30)
+		theta = theta + 45
 def main():
 	try:
 		turtle.TurtleScreen._RUNNING = True
