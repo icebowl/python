@@ -22,7 +22,7 @@ void loop() {
   Serial.print("BIN");
   Serial.println();        // carriage return after the last label
 
-  for (int x = 0; x < 64; x++) { // only part of the ASCII chart, change to suit
+  for (int x = 0; x < 128; x++) { // only part of the ASCII chart, change to suit
     // print it out in many formats:
     Serial.print(x);       // print as an ASCII-encoded decimal - same as "DEC"
     Serial.print("\t\t");  // prints two tabs to accomodate the label lenght
