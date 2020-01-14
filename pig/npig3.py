@@ -45,7 +45,7 @@ def main():
                 hcount = hcount + 1
         else:
             # computer roll
-            keep = chr(random.randint(0,5)+107)
+            keep = chr(random.randint(0,2)+107)
             time.sleep(2)
             if (keep == "k"):
                 c = c + tempscore + roll

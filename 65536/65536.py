@@ -23,7 +23,7 @@ def createRandoms():
 		n =  random.randint(65, 65+25)
 		c = chr(n)
 		f.write(c)
-		#print(c,end="")
+		print(c,end="")
 	f.close()
 	 
 def main():
