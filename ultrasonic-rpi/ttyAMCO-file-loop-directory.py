@@ -19,11 +19,11 @@ def getTimeString():
 	print("date and time:",timeString)
 	return timeString[2:len(timeString)]
 
-def monitortty(n):
+def monitortty(dirPath):
 	ts = getTimeString()
 	fileDate = ts+"n"+str(n)+".txt"
 	f = open(fileDate, "a")
-	addSeconds2loop =  300
+	addSeconds2loop =  3
 	t_end = time.time() + addSeconds2loop
 	serial_port = '/dev/ttyACM0'
 	baud_rate = 9600
@@ -60,17 +60,18 @@ def main():
 	nowDir = getTimeString()
 	mk_nowDir = "mkdir "+nowDir
 	os.system(mk_nowDir)
-	cd_nowDir = "cd /home/pi/data"+nowDir+"/"
-	print("cd_nowDir",cd_nowDir)
-	os.system(cd_nowDir)
-	os.system('pwd')
-	for n in range (0,5):
+	nowDirHome = "/home/pi/data/"+nowDir+"/"
+	print("nowDirHome",nowDirHome)
+	#os.system(cd_nowDir)
+	#os.system('pwd')
+	for n in range (0,3):
 		#monitortty(n)
 		#testTimeLoop(n)
 		ts = getTimeString()
-		touch_ts_txt = "touch "+ts+".txt"
+		touch_ts_txt = "touch "+nowDirHome+ts+".txt"
+		print("touch_ts_txt",touch_ts_txt)
 		os.system(touch_ts_txt)
 		time.sleep(1)
-	os.system('cd ..')
+		
 if __name__ == '__main__':
 	main()
