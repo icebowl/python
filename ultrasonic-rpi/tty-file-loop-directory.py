@@ -39,7 +39,7 @@ def main():
 	#print("nowDirHome",nowDirHome)
 	#os.system(cd_nowDir)
 	#os.system('pwd')
-	for n in range (0,3):
+	for n in range (0,2):
 		#monitortty(n)
 		#testTimeLoop(n)
 		ts = getTimeString()
