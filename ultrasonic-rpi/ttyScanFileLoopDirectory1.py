@@ -1,6 +1,7 @@
 # ttyScanFileLoopDirecoty*.py
-# nohup python ttyScanFileLoopDirecoty0.py
-# ps aux|grep python
+# nohup python ttyScanFileLoopDirecoty0.py &
+# ps aux | grep python
+# ps -ef | grep python
 # kill <the pid>
 import sys,os,serial
 from datetime import datetime
