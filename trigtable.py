@@ -8,7 +8,7 @@ def cossin(t):
   return h,k
 
 def main():
-    for t in range (0,360,21):
+    for t in range (0,360,22):
         x,y = cossin(t)
         x = str(round(x, 3))
         y = str(round(y, 3))
