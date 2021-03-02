@@ -9,7 +9,7 @@ def isprime(n):
     for d in range (2,n):
         d = float(d)
         #print ((nd / d),int(nd / d))
-        if ((nd / d) == int(nd / d)):
+        if ((nd / d) == int(nd / d) and (n !=1):
             prime = False
             break
     return prime
