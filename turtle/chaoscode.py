@@ -23,9 +23,11 @@ def newpoint(plist):  # Define a function called newpoint
 
 def chaos():
     w = turtle.Screen()
+    
     w.clear()
     w.bgcolor("#000000")
     t = turtle.Turtle()
+    turtle.tracer(0, 0) 
     t.speed(0)
     t.color("#ffffff")
     t.width(1)
@@ -45,7 +47,24 @@ def chaos():
         if (count > 100000):
             break
     #input("Press return to end")
+    #turtle.update()
     w.exitonclick()
     #w.close()
     #end Chaos
+
+# call the chaos
 chaos()
+
+'''
+
+
+    Set turtle.speed() to fastest.
+    Use the turtle.mainloop() functionality to do work without screen refreshes.
+    Disable screen refreshing with turtle.tracer(0, 0) then at the end do turtle.update()
+
+
+
+'''
+
+
+
