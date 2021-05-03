@@ -6,7 +6,6 @@ def elipse(t,a,b):
 	x = (a*-1); y = 0
 	t.goto(0,0)
 	t.pendown()
-	t.color("#00ff00")
 	start = 1
 	while (x < (a+1)):
 		y = ((b*b)*(1-((x*x)/(a*a))))**0.5
@@ -37,6 +36,11 @@ if __name__ == "__main__":
 	w.clear()
 	t = turtle.Turtle()
 	a = 35; b = 70
-	t.width(4)
+	t.width(10)
+	t.color("#00ff00")
 	elipse(t,a,b)
+	t.color("#00ffff")
+	elipse(t,40,10)
+	t.color("#ffff00")
+	elipse(t,5,11)
 	w.exitonclick()

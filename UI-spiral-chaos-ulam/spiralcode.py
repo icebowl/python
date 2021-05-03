@@ -38,6 +38,8 @@ def callSpiral():
     finally:
         turtle.Terminator()
 # end Recursion
+def main():
+	callSpiral()
 # *************************************************************************
 if __name__ == '__main__':
-    callSpiral()
+	main()

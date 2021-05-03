@@ -3,15 +3,15 @@ import random
 import time
 screen = turtle.Screen()
 t = turtle.Turtle()
-turtle.tracer(0, 0)
+#turtle.tracer(0, 0)
 
 dist = 2
-for i in range(50):
+for i in range(1000):
 	t.fd(dist)
-	t.rt(22.5)
+	t.rt(45)
 	dist += 0.25
 	#print(dist)
-turtle.update()
+#turtle.update()
 screen.exitonclick()	
 
 
