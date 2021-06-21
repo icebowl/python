@@ -1,23 +1,21 @@
-j# recursion
+# recursion
 import turtle
 
-def spiral(t,d,w,t):
+def spiral(t,d,w,tn):
 	t.color("#ff0000")
 	t.width(w)
 	t.fd(d)
-	t.rt(t)
-	dist += 0.25
-	w = w + 0.1
-	if (dist < 40):
-		spiral(t,dist,w,turn)
+	t.rt(tn)
+	d = d + 0.5
+	w = w + 0.25
+	tn = tn + 0.1
+	if (d < 70):
+		spiral(t,d,w,tn)
 	#stop recursion
-	t.penup()
-	t.goto(-200,-200)
-	t.pendown()
-	t.color("#0000ff")
-	t.width(1)
-	t.fd(-5*dist)
-	t.lt(turn*-1)
+	#t.color("#000000")
+	#t.width(1)
+	#t.bk(d)
+	t.circle(d)
 	
 	
 
@@ -28,7 +26,7 @@ def main():
 	t.goto(200,200)
 	t.pendown()
 	#spiral(turtle,distance,width,turn)
-	spiral(t,1,1,11.5)
+	spiral(t,1,1,1)
 	screen.exitonclick()	
 	
 if __name__=="__main__":
