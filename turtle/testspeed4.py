@@ -3,7 +3,7 @@ import random
 import time
 screen = turtle.Screen()
 t = turtle.Turtle()
-#turtle.tracer(0, 0)
+turtle.tracer(0, 0)
 
 dist = 2
 for i in range(1000):

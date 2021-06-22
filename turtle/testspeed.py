@@ -5,7 +5,7 @@ screen = turtle.Screen()
 
 turtlepower = []
 
-#turtle.tracer(0, 0)
+turtle.tracer(0, 0)
 for i in range(1000):
 	t = turtle.Turtle()
 	t.goto(random.random()*500, random.random()*1000)
